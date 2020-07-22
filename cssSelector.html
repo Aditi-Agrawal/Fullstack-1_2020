@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /*1. Type selector...*/
+      p,h1{color:red}
+
+      /*2.universal selector...*/
+      *{
+        color:green;
+      }
+      /*3. descendant selector...*/
+      div h1{
+        background-color: chartreuse;
+      }
+      /*4. child selector...*/
+      div > p{
+        text-align: center
+        ;
+      }
+      /*5. id selector...*/
+      #myPara{
+        color:darkorange;
+      }
+      /*6. class selector...*/
+      .class1{
+        background-color: rebeccapurple;
+      }
+      .class2 b{
+        text-shadow: 2px 4px 4px blue;
+      }
+      p.class2{
+        color:darkmagenta;
+      }
+
+      /*7. Attribute SElector...*/
+      p[lang]{
+        text-shadow:2px 2px 2px firebrick;
+      }
+    </style>
+</head>
+<body>
+  <div>
+    <h1>This is heading-1</h1>
+    <h2>THis is heading-2</h2>
+    <p id=myPara>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et minima natus, libero laborum modi cupiditate delectus, accusamus numquam illum aliquam ipsam quasi. Nemo, debitis fugit? Dicta illo impedit quaerat dolores non, quisquam asperiores provident tempora, minus enim repudiandae cupiditate nostrum, reprehenderit hic id accusantium cumque. Iste fugiat sunt explicabo dolorum?</p>
+  </div>
+  <div>
+    <h1 class=class1 id=head2>This is heading-1</h1>
+    <h2>THis is heading-2</h2>
+    <p class=class2><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, cumque exercitationem? Libero, culpa sapiente? Aspernatur ab earum dolorem quas? Dignissimos porro nam quaerat ducimus, corporis animi eum culpa enim error ab, inventore architecto vitae repellat sunt. Enim culpa rem saepe cum, dignissimos minima corrupti, incidunt dolore fugiat ipsum quae officia?</b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et minima natus, libero laborum modi cupiditate delectus, accusamus numquam illum aliquam ipsam quasi. Nemo, debitis fugit? Dicta illo impedit quaerat dolores non, quisquam asperiores provident tempora, minus enim repudiandae cupiditate nostrum, reprehenderit hic id accusantium cumque. Iste fugiat sunt explicabo dolorum?</p>
+  </div>
+  <div>
+    <h1 class=class1>This is heading-1</h1>
+    <h2>THis is heading-2</h2>
+    <p class= class1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et minima natus, libero laborum modi cupiditate delectus, accusamus numquam illum aliquam ipsam quasi. Nemo, debitis fugit? Dicta illo impedit quaerat dolores non, quisquam asperiores provident tempora, minus enim repudiandae cupiditate nostrum, reprehenderit hic id accusantium cumque. Iste fugiat sunt explicabo dolorum?</p>
+  </div>
+  <div>
+    <h1 class = class1>This is heading-1</h1>
+    <h2>THis is heading-2</h2>
+    <p class=class2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et minima natus, libero laborum modi cupiditate delectus, accusamus numquam illum aliquam ipsam quasi. Nemo, debitis fugit? Dicta illo impedit quaerat dolores non, quisquam asperiores provident tempora, minus enim repudiandae cupiditate nostrum, reprehenderit hic id accusantium cumque. Iste fugiat sunt explicabo dolorum?</p>
+  </div>
+  <div><p lang=en>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa debitis, temporibus hic minus quo provident reiciendis fugiat dolore. Ipsa, cum.</p></div>
+</body>
+</html>
