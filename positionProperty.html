@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            height:100vh;
+            width:100vw;
+            background-color: grey;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .main{
+            height:400px;
+            width:600px;
+            background-color:white;
+            overflow:hidden;
+            padding:10px;
+            position: absolute;
+            top:0;
+            
+        }
+        body{
+            height:500vh;
+        }
+        
+        .main img{
+            width:300px;
+            height:200px;
+            position: absolute;
+            top:0;
+            z-index:-2;
+            /*position: absolute;/*absolute:apne relaion khtm kr deta h aur khin bhi ja skta h
+            bottom:0;
+            right:0;*/
+            /*left:-200px;
+            top:100px; apni current position se 100px niche ho gya*/
+        }
+        .main p{
+            position: absolute;
+            top:0;
+            z-index: -20;
+        }
+        .main h1{
+            /*position:static; u cant change the respective postion of the element*/
+            /*margin-top:100px;*/
+            /*position: absolute; relative: current position se hil skta h...bt relation khtm nhi honge jo jha tha whi rhega bt now element is movable...
+            top:0px;
+            right:0;*/
+            position: absolute;
+            top:0;
+            z-index:3;
+        }
+        .box{
+            height:100px;
+            width:100px;
+        }
+        #box1{
+            background-color: blueviolet;
+        }
+        #box2{
+            background-color:crimson;
+        }
+        #box3{
+            background-color: gold;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+          <div class="main">
+              <div class="box" id="box1"></div>
+              <div class="box" id="box2"></div>
+              <div class="box" id="box3"></div>
+              <h1>This is my Headingdehiuhiojojpojpjpo.</h1>
+              <img src="img/html.png" alt="aditi">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, necessitatibus numquam totam dolor architecto voluptas ipsum! Placeat iste architecto quam repudiandae saepe eaque accusamus, cupiditate tenetur libero earum eum praesentium nulla iure esse, ipsam at ipsa vel sed possimus alias repellendus error non iusto. Veniam sapiente corporis consequatur tempore nostrum voluptates quas repudiandae placeat saepe quisquam, tempora possimus voluptatem optio quam sed laboriosam obcaecati aspernatur itaque vero nisi impedit ab nobis? Impedit aliquid quaerat sunt repellat ad esse vel voluptates laborum tempora, asperiores sed possimus amet eum quia neque cum magni sequi mollitia saepe explicabo aliquam? Earum dolores ullam aperiam modi consequuntur numquam facilis voluptas, assumenda et quis ut obcaecati incidunt quos repellendus! Reprehenderit nesciunt accusamus voluptate at tempora. Repudiandae provident reiciendis nesciunt. Rem pariatur enim porro, ratione repudiandae officia explicabo quo labore eveniet harum sapiente nihil et, dicta veritatis eum, suscipit sint! Quaerat quibusdam, saepe veritatis veniam vero dolores natus distinctio iure. Molestias facilis nemo non a aut reiciendis culpa autem. Rerum, maxime asperiores! Quasi, placeat! Officiis, possimus voluptatum ipsum accusamus totam reprehenderit unde odit ad iure quaerat facilis ut molestias fugit cum. Error, consectetur porro pariatur veritatis excepturi, itaque aliquid asperiores reprehenderit autem optio ab, non nobis vitae.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde nesciunt consequuntur in deleniti dolores minima nobis accusamus aperiam, quidem incidunt.</p>
+          </div>
+      </div>
+  </body>
+</html>

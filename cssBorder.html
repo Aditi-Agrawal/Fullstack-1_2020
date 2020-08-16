@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    #para1{
+        border-style: dotted solid;                        /*specifies what kind of border to display.*/
+        border-width:2px 3px 4px 5px;                      /*specifies the width of the four borders.*/
+        border-color:red aqua blue green;         /*used to set the color of the four borders.*/
+    }
+    #para2{
+        /* ShortHand Property */
+        border: 6px solid red;
+        border-radius:12px;                                 /*used to add rounded borders to an element:*/
+    }
+    #para3{
+        border-left:6px solid blue;
+        background-color:aqua;
+    }
+    #para4{
+        border:2px solid green;
+        width:300px ;
+        margin:auto;                                       /*space will be split equally between the left and right margins*/
+    }
+    #one{
+        border:3px dashed black; 
+        margin-left:100px;
+    }
+    .ex1{
+        margin-left:inherit;
+    }
+</style>
+
+</head>
+<body>
+    <div>
+        <p id="para4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum molestiae ad a debitis dolor, 
+            unde incidunt neque atque recusandae harum.</p>
+        </div>
+        <hr>
+<p id="para1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis sapiente facilis velit iste unde 
+    laudantium reiciendis tempora modi quis quo at dolorem expedita ullam molestias corporis deleniti quasi sed, 
+    dolorum tempore nobis nam qui impedit exercitationem? Sed dolores molestias nam eum eligendi esse, maxime ducimus. 
+    Vitae cum reiciendis porro voluptatibus possimus error nesciunt commodi quibusdam aperiam perspiciatis, dolores 
+    iusto? Atque quibusdam assumenda eaque minus laborum neque harum, itaque officiis commodi sint illum explicabo, 
+    deleniti repellat soluta quasi. Soluta exercitationem reiciendis eos culpa delectus assumenda sunt, dolore, doloribus 
+    itaque vel provident excepturi aut voluptatum reprehenderit tempora omnis nemo in ipsam natus.
+
+    <p id="para2">ShortHand Property</p>
+
+    <p id="para3">You can also specify all the individual border properties for just one side(left side border)</p>
+
+    <div id="one">
+        <p class="ex1">This paragraph has an inherited left margin (from the div element).</p>
+    </div>
+        
+</p>
+</body>
+</html>

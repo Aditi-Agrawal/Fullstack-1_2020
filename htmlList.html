@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html list</title>
+    <style>
+        ul{
+            list-style-image: url(img/html.png);   /* khud ki img dalne k liye */
+        }
+        ul ol{                                    /* unorder list ke andr ordered list ki list-style none krdi*/ 
+            list-style: none;
+        }
+        /*ol{
+            list-style: lower-alpha;
+        }*/
+    </style>
+</head>
+<body>
+    <h2>Unordered List</h2>
+    <hr>
+    <h3>Web Technologies</h3>
+    <ul type="square">                              <!--change style (1.)using html attribute-->
+        <LI>HTML5</LI>
+        <ol>
+            <li>Block level element</li>
+            <li>Inline Level Element</li>
+        </ol>
+        <LI>CSS3</LI>
+        <ol>
+            <li>CSS1</li>
+            <li>CSS2</li>
+            <li>CSS3</li>
+        </ol>
+        <li>Javascript</li>
+        <li>Bootstrap</li>
+    </ul>
+    <h2>Ordered List</h2>
+    <hr>
+    <h3>Programming Languages</h3>
+    <ol type="a" start="25">
+        <li>Python</li>              
+        <li>C Language</li>
+        <li>C++</li>
+        <li>Java</li>
+    </ol>
+    <h2>Description List</h2>
+    <hr>
+    <dl>
+        <dt><span style="color:red;font-size: 20px;"> HTML List</span></dt>
+        <dd>
+            Html is the web technology used by web developer.jisme mene ghnta kuch nhi padha.
+        </dd>
+    </dl>
+    <hr>
+    <p>List in HTML is a block level element(line break is their).Whereas inline element continue to be in same line.</p>
+    <p>how can i convert it in block level element? (Using display:inline)</p>
+</body>
+</html>

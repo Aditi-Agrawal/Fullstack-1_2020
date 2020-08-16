@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout1</title>
+    <style>
+      *{
+        margin:0;                              /* default margin remove krdi*/
+        padding:0;
+      }
+      .container{
+        border:3px solid black;
+        width:1200px;
+        margin:0px auto;                       /*center m aajaega pura box*/
+        padding:15px;
+      }
+      .header{
+        background-color:grey;
+        border-radius: 15px;
+        height:70px;
+        width:100%;
+        font-size:40px;
+        /*center m krne k liye*/
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        margin-bottom:15px;
+      }
+      .content{
+        /*border:5px solid red;*/
+      }
+/* float property issue (parent also need float property)*/
+      .content:after{
+        content:'';
+        display:block;
+        clear:both;
+        margin-bottom: 15px;
+      }
+      
+      .left{
+        width:20%;
+        height:515px;
+        /*border:2px solid yellow;*/ 
+        float:left;
+      }
+      .navigation{
+        width:100%;
+        height:300px;                                          /*300px*/
+        background-color: violet;                            /*15px*/
+        margin-bottom: 15px;
+        display:flex;
+        justify-content: center;                              /*text align property applied on <p> ,<h1>, etc*/
+        align-items: center;
+        color:white;
+        border-radius: 15px;
+      }
+      .news{
+        width:100%;
+        height:200px;                                        /*200px*/
+        background-color: orange;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        border-radius: 15px;
+
+      }
+      .main{
+        width:78%;
+        height:515px;
+        /*border:2px solid blue;*/ 
+        float:right;
+        display:flex;
+        justify-content: center;   /*horizontally center kr rha h*/
+        align-items: center;       /*vertically center kr rha h*/
+        color:white;
+        border-radius: 15px;
+        background-color: yellow;
+      }
+      .footer{
+        background-color:brown;
+        border-radius: 15px;
+        height:70px;
+        width:100%;
+        font-size:40px;
+        /*center m krne k liye*/
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="content">
+        <div class="left">
+          <div class="navigation">Navigation</div>
+          <div class="news">News Updates</div>
+        </div>
+        <div class="main">Main Content</div>
+      </div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>
