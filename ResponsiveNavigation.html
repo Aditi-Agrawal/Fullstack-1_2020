@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
     <title>Responsive Navigation Bar</title>
     <style>
         *{
-            padding: 0;margin: 0;box-sizing:border-box;
+            padding: 0;
+            margin: 0;
+            box-sizing:border-box;
         }
         .header{
             width:100%;
@@ -15,27 +18,118 @@
             padding: 0 20px;
         }
         .header h2{
-            line-height:70px; /* center heading vertically*/
+            line-height:70px;                    /* center heading vertically*/
             float:left;
             text-transform: uppercase;
+            color:white;
         }
         .header .menu{
             list-style: none;
             float: right;
         }
-        
+        .menu li{
+          display:inline-block;
+          line-height:70px;
+          
+        }
+        .menu li a{
+          text-decoration:none;
+          font-weight:bold;
+          font-size: 20px;
+          color:white;
+          text-transform: uppercase;
+          transition:.4s;
+          padding:0px 20px;
+        }
+        .menu li a:hover, .show-btn:hover, .hide-btn:hover{
+          color:skyblue;
+        }
+        .show-btn, .hide-btn{
+          font-size: 30px;
+          line-height:70px;
+          color:white;
+          display: none;
+          transition:.4s;
+        }
+       
+        .show-btn{
+          float:right;
+        }
+        #chk{
+          position: absolute;
+          visibility: hidden;
+          z-index:-10;
+        }
+
+
+        @media(max-width:800px){
+          .show-btn, .hide-btn{
+            display:block;
+            }
+            .menu{
+              position: fixed;
+              top:0;
+              right:-100%;   /*slider effect*/
+              width:100%;
+              height:100vh;
+              background-color: #333;
+              text-align:center;
+              padding:80px 0;
+              transition:.7s;
+              line-height:normal;
+
+            }
+            #chk:checked ~ .menu{
+              right:0;
+            }
+            .menu li{
+              display:block;
+              
+            }
+            .menu li a{
+              display:block;
+            }
+            .hide-btn{
+              position :absolute;
+              right:20px;
+              top:10px;
+            }
+        }
+        .content{
+              padding: 20px;
+            }
+            .content img{
+              width:100%;max-width:700px;
+              display:block;
+              margin:auto;
+              margin-bottom: 20px;
+            }
+            .content p{
+              text-align:justify;
+            }
     </style>
   </head>
   <body>
     <div class="header">
             <h2>Beta-Labs</h2>
+            <input type="checkbox" id="chk">
+            <label for="chk" class="show-btn">
+            <i class="fa fa-bars"></i></label>
             <ul class="menu">
                 <li><a href="Assignment1.html">Home</a></li>
                 <li><a href="Assignment1.html">About</a></li>
                 <li><a href="Assignment1.html">Services</a></li>
                 <li><a href="Assignment1.html">Blog</a></li>
                 <li><a href="Assignment1.html">Contact</a></li>
+                <label for="chk" class="show-btn">
+                <i class="fa fa-times"></i></label>
             </ul>
+    </div>
+    <div class="content">
+      <img src="img/html.png">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam aliquam enim rem id repellendus dicta, totam velit sit unde officiis quisquam. Explicabo enim architecto reprehenderit ipsa omnis debitis pariatur error. Facere perferendis perspiciatis obcaecati repellendus vel eaque tenetur atque dolores, iure fuga, odio inventore ad quidem optio qui magnam rerum laudantium soluta omnis, asperiores sunt molestiae alias? Illum, officia aut quos fuga est porro vero ullam at ut. Nam vitae iure autem, eos reiciendis nulla quidem inventore commodi quos soluta earum voluptatem repellendus velit consectetur aliquid explicabo rem suscipit optio fuga recusandae sed delectus consequatur? Nulla reiciendis saepe iste nobis similique cumque nam, quia hic illum dolore laboriosam nisi, non incidunt dignissimos quis at fugiat sed illo? Magnam illo labore ipsa aspernatur laboriosam? Quasi enim labore tempora suscipit tenetur, dolores quaerat saepe sapiente maiores quis esse optio quisquam nulla non? Assumenda ipsa saepe, ex provident illum officia est quidem suscipit sapiente minus corporis autem velit nesciunt veritatis harum illo. Officia accusamus ut explicabo perferendis quia dolores odio sit. Beatae laudantium asperiores deserunt, error id nisi dolores laborum voluptate et odio expedita veniam tempora minima cupiditate labore quo. Voluptatum enim vel quidem omnis dolorem! Natus culpa, cum aliquid voluptatum omnis itaque reprehenderit nobis nam dolores. Tempore et impedit recusandae molestias ea fuga sit error, deserunt eius officiis iste expedita, doloribus quam quibusdam vel placeat omnis aliquid autem quia ipsa voluptatum quas ad quasi libero! Voluptatibus corrupti beatae saepe dignissimos temporibus atque et, sit nostrum, non perspiciatis exercitationem nulla consectetur cum at ex sapiente expedita maxime similique autem impedit doloribus reprehenderit itaque ducimus natus? Facilis, quos quas. Illo impedit quaerat fugit error similique ea blanditiis quod nam commodi libero nemo distinctio facere delectus, quae provident quis illum? Molestiae aut a tenetur voluptas tempore totam officiis autem, corporis voluptatum atque architecto inventore vero ducimus fugiat incidunt et quidem harum similique ratione, minima fuga adipisci aliquam. Fugit facere id unde ex consequatur voluptate similique quaerat, voluptates aspernatur quae doloremque! Quae labore repellat eligendi non alias sunt iste voluptatum ullam dolorem ipsam enim aliquam rerum assumenda magnam ad quidem corrupti perferendis similique recusandae, dolore soluta? Delectus quis vitae nam aliquam hic cum fuga eos, iste repudiandae aspernatur eaque incidunt odit, quae sunt minima. Obcaecati iste nobis perspiciatis, at in praesentium id atque maiores et eveniet aliquid reiciendis eaque iure. Aspernatur velit distinctio ullam doloribus earum delectus itaque quae deleniti dolorem unde rem facere qui vero deserunt placeat, eaque in optio molestiae! Placeat minima veniam earum, rerum autem, minus perferendis voluptas quidem eveniet illum ipsa beatae quos ipsum laudantium, esse dolores magni ducimus. Possimus repellat quod, totam omnis perspiciatis repellendus! Esse ipsum nisi optio animi illo voluptates debitis dolores ab enim mollitia ducimus fugiat architecto veritatis odit omnis temporibus minima quia repellendus sit, cumque nihil! Doloremque reprehenderit non, fugit et fuga soluta corporis velit aspernatur odio ipsum error ratione omnis dicta nisi eum provident ullam delectus id! Placeat, totam corrupti ipsa asperiores fugit odio reiciendis animi illum. Itaque dicta repellat aut quae quas saepe obcaecati deleniti.
+      </p>
     </div>
   </body>
 </html>

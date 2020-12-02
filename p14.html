@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+</head>
+<body>   
+    <button id="btn" onclick="hello()">Click Me</button>
+    <script>
+        function hello()
+        {
+            //var x=10;
+            //var y=20;
+            //alert("This is the sum of two numbers" + (x+y));
+
+            //CONFIRMED DIALOGUE BOX
+            //var opt=confirm("do u want to enter your name?");   //ok=true(will store in the option) cancel=false (will fet stored in the option....)
+            //if(opt){
+            //    alert("saved successfully");
+            //}
+            //else{
+            //    alert("not saved");
+
+            //PROMPT DIALOG BOX ---- dynamically take input from user at runtime....
+            
+            //}
+            //var name=prompt("Enter your name");
+            //if(name.length>0 && name!="null"){
+            //    alert("Welcome"+name);
+            //}
+            //else{
+            //    alert("Welcome Anonymous");
+            //}
+            var num1=parseInt(prompt("enter num1"));
+            var num2=parseInt(prompt("enter num2"));
+            if((num1+num2)<50){
+                alert("Bad Luck");
+            }
+            else{
+                alert((num1+num2));
+            }
+//security content allow javascipt now try to execute the program nothing happened 
+        }
+    </script>
+    <noscript><p>your javascript is disable.</p></noscript> <!--this will seen when javascript is enabled int the client's system-->
+</body>
+</html>
